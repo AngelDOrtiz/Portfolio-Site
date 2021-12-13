@@ -54,7 +54,7 @@ const Home = () => {
                   </button>
                   
                   <button className={styles.button} id="linkedinButton">
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/angel-ortiz/">
                       <p>linkedIn</p>  
                     </a>
                   </button>
