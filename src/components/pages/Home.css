@@ -1,14 +1,22 @@
 @keyframes border-glow {
     0% {
         border: 3px solid #C0CE1B;
+        
+        background-color: #FDD7C0;
     }
     25% {
-        border: 3px solid #8FdFE2; 
-    }
+        border: 3px solid #8FdFE2;
+        
+background-color: rgb(238, 120, 120);    }
     100% {
-       
-        border: 3px solid #C0CE1B;    }
+    
+        border: 3px solid #C0CE1B;    
+        background-color: rgb(238, 120, 120);
+    }
+        
 }
+
+
 
 .home {
     display: flex;
@@ -40,8 +48,9 @@
 
 .a {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 900%;
+    font-size: 760%;
     font-weight: 900;
+    margin-bottom: 100px;
 }
 
 .header {
@@ -54,8 +63,9 @@
     
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 900%;
+    font-size: 760%;
     font-weight: 900;
+    margin-bottom: 100px;
 }
 
 .middleRow {
@@ -72,6 +82,12 @@
     background-color: #FDD7C0;
     height: 100%;
     width: 1694px;
+}
+
+.glasses {
+    height: 10px;
+    width: 10px;
+    border: 1px solid red;
 }
 
 .mBoxLeft {
@@ -109,7 +125,9 @@
     display: flex;
     flex-direction: column;
     height: 242px;
+    max-height: 500px;
     width: 416px;
+    max-width: 800px;
     
 }
 
@@ -117,7 +135,9 @@
     display: flex;
     flex-direction: row;
     height: 50%;
+    max-height: 80%;
     width: 100%;
+    max-width: 120%;
 }
 
 .buttonRow2 {
@@ -127,18 +147,49 @@
     width: 100%;
 }
 
+a {
+text-decoration: none;
+text-decoration-color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     height: 100%;
     width: 50%;
     border: 1px solid #c79f87;
     background-color: #FDD7C0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+}
+
+.buttonText {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.buttonLogo {
+    height: 50px;
+    width: 50px;
+    display: none;
 }
 
 .button:hover {
     transform: translateZ(40px);
     transform: scale(130%);
-    animation: border-glow 5s infinite;
+    animation: infinite border-glow 5s;
+    animation-direction: alternate;
+    box-shadow: 6px 6px #dfbda8;
 }
 
 .button:active {

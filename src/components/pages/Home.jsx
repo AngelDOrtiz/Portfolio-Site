@@ -23,31 +23,54 @@ const Home = () => {
       </div>
       
       <div className={styles.middleRow}>
+
+        {/* <div id="pricetag-glasses" className={styles.glasses}> </div> */}
+
+        
         <section className={styles.middleBox}>
+          
+
           <img className={styles.mBoxLeft} src="https://cdn.discordapp.com/attachments/804704049626349579/919980657210454107/20211202_205219.jpg" alt="My daughter, Alice" />
 
           <div className={styles.mBoxMiddle}>
+          
             <div className={styles.mBoxMiddleTop}>
+           
               <h1>HELLO!</h1>
+          
             </div>
+         
             <div className={styles.mBoxMiddleBottom}>
+              
               <div className={styles.buttonBox}>
+                
                 <div className={styles.buttonRow1}>
-                  <button className={styles.button}>
-
+                  
+                  <button className={styles.button} id="githubButton">
+                    <a href="https://github.com/AngelDOrtiz" >
+                      <p className={styles.buttonText}>GitHub</p>
+                      {/* <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub logo" className={styles.buttonLogo} /> */}
+                    </a>
                   </button>
-                  <button className={styles.button}>
-
+                  
+                  <button className={styles.button} id="linkedinButton">
+                    <a href="">
+                      <p>linkedIn</p>  
+                    </a>
                   </button>
+
                 </div>
                 
                 <div className={styles.buttonRow2}>
-                  <button className={styles.button}>
-
+                 
+                  <button className={styles.button} id="projectsButton" >
+                    <p>Projects</p>
                   </button>
+                 
                   <button className={styles.button}>
-
+                    <p>About Me</p>
                   </button>
+
                 </div>
               </div>
             </div>
