@@ -84,10 +84,113 @@ background-color: rgb(238, 120, 120);    }
     width: 1694px;
 }
 
-.glasses {
-    height: 10px;
-    width: 10px;
-    border: 1px solid red;
+.sunglasses {
+    z-index: 1;
+    position: fixed;
+    height: 40px;
+    width: 100px;
+    transform: translateX(1375px) translateY(190px);
+}
+
+.sippyCup {
+    z-index: 1;
+    position: fixed;
+    height: 100px;
+    width: 75px;
+    transform: translateX(1330px) translateY(410px);
+}
+
+.jacket {
+    z-index: 1;
+    position: fixed;
+    height: 250px;
+    width: 200px;
+    transform: translateX(40px) translateY(260px);
+}
+
+.wand {
+    z-index: 1;
+    position: fixed;
+    height: 180px;
+    width: 70px;
+    transform: translateX(280px) translateY(290px);
+}
+
+.smile {
+    z-index: 1;
+    position: fixed;
+    height: 20px;
+    width: 60px;
+    transform: translateX(1400px) translateY(240px);
+}
+
+.modalBox {
+    display: none;
+    border: inset 5px rgb(121, 199, 192);
+    background-color: rgb(119, 253, 253);
+    opacity: 95%;
+    position: fixed;
+    min-height: 220px;
+    min-width: 170px;
+    transform: translateX(1320px) translateY(10px);
+
+}
+
+
+.sunglasses:hover + .modalBox {
+    display: flex;
+}
+
+.sippyCup:hover + .modalBox {
+    display: flex;
+    transform: translateX(1270px) translateY(260px);
+}
+
+.jacket:hover + .modalBox {
+    display: flex;
+    z-index: 1;
+    transform: translateX(240px) translateY(210px);
+ 
+}
+
+.wand:hover + .modalBox {
+    display: flex;
+    transform: translateX(240px) translateY(110px);
+}
+
+.smile:hover + .modalBox {
+    display: flex;
+    transform: translateX(1460px) translateY(40px);
+}
+
+.modalContent {
+    display: flex;
+    height: 220px;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalImage {
+    display: flex;
+    max-height: 80px;
+    max-width: 100px;
+    margin-top: 20px;
+    border: inset 5px rgb(121, 199, 192);
+
+}
+
+.modalName {
+    border: inset 5px rgb(121, 199, 192);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+.modalPrice {
+    border: inset 5px rgb(121, 199, 192);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
 }
 
 .mBoxLeft {
