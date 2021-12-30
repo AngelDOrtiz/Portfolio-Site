@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styles from './Home.css';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -79,10 +80,12 @@ const Home = () => {
                 
                 <div className={styles.buttonRow2}>
                  
-                  <button className={styles.button} id="projectsButton" >
-                    <p>Projects</p>
-                  </button>
-                 
+                  <Link to="/projects" className={styles.link}>
+                    <button className={styles.button} id="projectsButton" >
+                      <p>Projects</p>
+                    </button>
+                  </Link>
+
                   <button className={styles.button}>
                     <p>About Me</p>
                   </button>
